@@ -1,6 +1,6 @@
 {
     "variables" : {
-        "region" : "us-east-1"
+        "region" : "ap-south-1"
     },
     "builders" : [
         {
@@ -8,7 +8,7 @@
             "profile" : "default",
             "region" : "{{user `region`}}",
             "instance_type" : "t2.micro",
-            "source_ami" : "ami-14c5486b",
+            "source_ami" : "ami-0ad42f4f66f6c1cc9",
             "ssh_username" : "ec2-user",
             "ami_name" : "docker-17.12.1-ce",
             "ami_description" : "Amazon Linux Image with Docker-CE",
@@ -17,7 +17,7 @@
             },
             "tags" : {
                 "Tool" : "Packer",
-                "Author" : "mlabouardy"
+                "Author" : "siteshm"
             }
         }
     ],
