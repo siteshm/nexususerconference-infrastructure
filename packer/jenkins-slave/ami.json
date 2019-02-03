@@ -1,7 +1,7 @@
 {
     "variables" : {
-        "region" : "eu-west-3",
-        "source_ami" : "ami-0ebc281c20e89ba4b"
+        "region" : "ap-south-1",
+        "source_ami" : "ami-0ad42f4f66f6c1cc9"
     },
     "builders" : [
         {
@@ -18,7 +18,7 @@
             },
             "tags" : {
                 "Tool" : "Packer",
-                "Author" : "mlabouardy"
+                "Author" : "siteshm"
             }
         }
     ],
