@@ -4,6 +4,6 @@ data "aws_ami" "bastion" {
 
   filter {
     name   = "name"
-    values = ["bastion-2018.03.0"]
+    values = ["bastion-2019.01.0"]
   }
 }
