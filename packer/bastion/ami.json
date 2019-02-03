@@ -1,7 +1,7 @@
 {
     "variables" : {
-        "region" : "eu-west-3",
-        "source_ami" : "ami-0ebc281c20e89ba4b"
+        "region" : "ap-south-1",
+        "source_ami" : "ami-0ad42f4f66f6c1cc9"
     },
     "builders" : [
         {
@@ -11,14 +11,14 @@
             "instance_type" : "t2.micro",
             "source_ami" : "{{user `source_ami`}}",
             "ssh_username" : "ec2-user",
-            "ami_name" : "bastion-2018.03.0",
+            "ami_name" : "bastion-2019.01.0",
             "ami_description" : "Amazon Linux Image with Telegraf",
             "run_tags" : {
                 "Name" : "packer-builder-docker"
             },
             "tags" : {
                 "Tool" : "Packer",
-                "Author" : "mlabouardy"
+                "Author" : "siteshm"
             }
         }
     ],
